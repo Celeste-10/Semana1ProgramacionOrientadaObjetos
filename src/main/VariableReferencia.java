@@ -1,12 +1,16 @@
 package main;
 
+import javax.swing.*;
 import java.util.Scanner;
 
 public class VariableReferencia {
     public static void main(String[] args) {
-        Scanner  leer = new Scanner(System.in);
-        String nombre = leer.nextLine();
-        System.out.println("El nombre es: " + nombre);
-        leer.next();
+        //Scanner  leer = new Scanner(System.in);
+        //System.out.println("Dime tu nombre: ");
+        //String nombre = leer.nextLine();
+        String nombre = JOptionPane.showInputDialog("Dime tu nombre.");
+        String mensaje = "Hola " + nombre;
+
+        JOptionPane.showMessageDialog(null,  mensaje + ", bienvenenido");
     }
 }
